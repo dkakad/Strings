@@ -1,6 +1,7 @@
 #include "IsUnique.h"
 #include "StringPerm.h"
 #include "URLify.h"
+#include "Palindrome.h"
 
 /**
  * Tester function to check if a string has unique characters
@@ -44,6 +45,16 @@ void TestURL() {
 	printf("%s \n", Url(c));
 }
 
+void TestPalindrome() {
+	char s[] = "Malayalam";
+	if (isPalindrome(s)) {
+		printf("Is a Palindrome \n");
+	}
+	else {
+		printf("Not a Palindrome \n");
+	}
+}
+
 /**
  * Start of main function
  */
@@ -51,7 +62,8 @@ void TestURL() {
 int main() {
 	//TestUnique();
 	//TestPerm();
-	TestURL();
+	//TestURL();
+	TestPalindrome();
 	return 0;
 }
 

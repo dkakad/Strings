@@ -144,11 +144,12 @@
   <ItemGroup>
     <ClCompile Include="IsUnique.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Palindrome.cpp" />
     <ClCompile Include="StringPerm.cpp" />
     <ClCompile Include="URLify.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="isPalindrome.h" />
+    <ClInclude Include="Palindrome.h" />
     <ClInclude Include="IsUnique.h" />
     <ClInclude Include="StringPerm.h" />
     <ClInclude Include="URLify.h" />
