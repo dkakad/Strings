@@ -2,10 +2,16 @@
 
 using namespace std;
 
+/**
+ * Helper Function to check if a string is an anagram of a
+ * palindrome or not.
+ * @param c -> The string to be checked
+ * @return true if the string is an anagram of a palindrome, false otherwise
+ */
 bool isPalindrome(char c[]) {
 	string s(c);
 	int n = s.size();
-	int map[26], numOdd = 0, numEven = 0;
+	int map[ALPHABETS], numOdd = 0, numEven = 0;
 	string::iterator it;
 	for (it = s.begin(); it != s.end(); it++) {
 		if (*it == ' ') {
@@ -15,12 +21,9 @@ bool isPalindrome(char c[]) {
 		map[ascToIndex(*it)]++;
 	}
 
-	for (int i = 0; i < 26; i++) {
+	for (int i = 0; i < ALPHABETS; i++) {
 		if (isOdd(map[i])) {
 			numOdd++;
-		}
-		else {
-			numEven++;
 		}
 	}
 
@@ -33,23 +36,29 @@ bool isPalindrome(char c[]) {
 		}
 	}
 	else {
-		if (numOdd == 0) {
-			return true;
-		}
-		else {
-			return false;
-		}
+		return !numOdd;
 	}
 }
 
+/**
+ * Helper Function to check if a number is odd or not.
+ * @param n -> The number to be checked
+ * @return true if the number is odd, false otherwise
+ */
 bool isOdd(int n) {
 	return n % 2;
 }
 
+/**
+ * Helper Function to convert a character into its corresponding
+ * index in the map.
+ * @param c -> The character to be mapped
+ * @return index that is mapped
+ */
 int ascToIndex(char c) {
-	if (c >= 65 && c <= 90) {
-		c = c + 32;
+	if (c >= UPPER_CASE_A && c <= UPPER_CASE_Z) {
+		c = c + LOWER_CASE_A - UPPER_CASE_A;
 	}
-	int val = c - 97;
+	int val = c - LOWER_CASE_A;
 	return val;
 }
