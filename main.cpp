@@ -2,6 +2,8 @@
 #include "StringPerm.h"
 #include "URLify.h"
 #include "Palindrome.h"
+#include "OneAway.h"
+#include "Compress.h"
 
 /**
  * Tester function to check if a string has unique characters
@@ -37,13 +39,17 @@ void TestPerm() {
 
 /**
  * Tester function to URLify a string i.e fill up
- * the spaces with %20
+ * the spaces with %20.
  */
 
 void TestURL() {
 	char c[] = "Mr John Smith      ";
 	printf("%s \n", Url(c));
 }
+
+/**
+ * Tester function to Check if a string anagram is a palindrome or not.
+ */
 
 void TestPalindrome() {
 	char s[] = "Malayalam";
@@ -56,6 +62,31 @@ void TestPalindrome() {
 }
 
 /**
+ * Tester function to check if 2 strings are just one
+ * edit away from each other or not
+ */
+void TestOneAway() {
+	char a[] = "pales";
+	char b[] = "bakes";
+	if (isOneAway(a, b)) {
+		printf("Is One Away \n");
+	}
+	else {
+		printf("Not is One Away \n");
+	}
+}
+
+/**
+ * Tester function to check a function that performs
+ * basic string compression.
+ */
+void TestCompressed() {
+	char a[] = "aaabbccddddeeeeee";
+	string s = Compress(a);
+	const char * c = s.c_str();
+	printf("%s \n", c);
+}
+/**
  * Start of main function
  */
 
@@ -63,7 +94,9 @@ int main() {
 	//TestUnique();
 	//TestPerm();
 	//TestURL();
-	TestPalindrome();
+	//TestPalindrome();
+	//TestOneAway();
+	TestCompressed();
 	return 0;
 }
 

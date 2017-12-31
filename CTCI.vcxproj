@@ -142,13 +142,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Compress.cpp" />
     <ClCompile Include="IsUnique.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="OneAway.cpp" />
     <ClCompile Include="Palindrome.cpp" />
     <ClCompile Include="StringPerm.cpp" />
     <ClCompile Include="URLify.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Compress.h" />
+    <ClInclude Include="OneAway.h" />
     <ClInclude Include="Palindrome.h" />
     <ClInclude Include="IsUnique.h" />
     <ClInclude Include="StringPerm.h" />

@@ -1,3 +1,11 @@
 ﻿  main.cpp
+  OneAway.cpp
+  Compress.cpp
+c:\users\deepa\onedrive\documents\visual studio 2015\projects\ctci\ctci\compress.cpp(18): warning C4018: '<': signed/unsigned mismatch
+c:\users\deepa\onedrive\documents\visual studio 2015\projects\ctci\ctci\compress.cpp(24): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+c:\users\deepa\onedrive\documents\visual studio 2015\projects\ctci\ctci\compress.cpp(31): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  Generating Code...
   CTCI.vcxproj -> C:\Users\deepa\OneDrive\Documents\Visual Studio 2015\Projects\CTCI\Debug\CTCI.exe
   CTCI.vcxproj -> C:\Users\deepa\OneDrive\Documents\Visual Studio 2015\Projects\CTCI\Debug\CTCI.pdb (Full PDB)
